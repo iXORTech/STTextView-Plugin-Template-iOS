@@ -3,12 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3EA813672C98AEA300A8CB2C /* STTextView in Frameworks */ = {isa = PBXBuildFile; productRef = 3EA813662C98AEA300A8CB2C /* STTextView */; };
+		3EA8136C2C98AF6F00A8CB2C /* STTextViewDummyPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 3EA8136B2C98AF6F00A8CB2C /* STTextViewDummyPlugin */; };
 		7565EBBE2A9BE09D0005B170 /* EditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7565EBBD2A9BE09D0005B170 /* EditorViewController.swift */; };
-		7565EBC12A9BE0B10005B170 /* STTextView in Frameworks */ = {isa = PBXBuildFile; productRef = 7565EBC02A9BE0B10005B170 /* STTextView */; };
 		758BAB532A9BDFC200D840BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758BAB522A9BDFC200D840BF /* AppDelegate.swift */; };
 		758BAB552A9BDFC300D840BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 758BAB542A9BDFC300D840BF /* Assets.xcassets */; };
 		758BAB582A9BDFC300D840BF /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 758BAB562A9BDFC300D840BF /* MainMenu.xib */; };
@@ -28,7 +29,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7565EBC12A9BE0B10005B170 /* STTextView in Frameworks */,
+				3EA813672C98AEA300A8CB2C /* STTextView in Frameworks */,
+				3EA8136C2C98AF6F00A8CB2C /* STTextViewDummyPlugin in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,7 +74,8 @@
 			);
 			name = DemoApp;
 			packageProductDependencies = (
-				7565EBC02A9BE0B10005B170 /* STTextView */,
+				3EA813662C98AEA300A8CB2C /* STTextView */,
+				3EA8136B2C98AF6F00A8CB2C /* STTextViewDummyPlugin */,
 			);
 			productName = DemoApp;
 			productReference = 758BAB4F2A9BDFC200D840BF /* DemoApp.app */;
@@ -103,7 +106,8 @@
 			);
 			mainGroup = 758BAB462A9BDFC200D840BF;
 			packageReferences = (
-				7565EBBF2A9BE0B10005B170 /* XCRemoteSwiftPackageReference "STTextView" */,
+				3EA813652C98AEA300A8CB2C /* XCRemoteSwiftPackageReference "STTextView" */,
+				3EA8136A2C98AF6F00A8CB2C /* XCLocalSwiftPackageReference ".." */,
 			);
 			productRefGroup = 758BAB502A9BDFC200D840BF /* Products */;
 			projectDirPath = "";
@@ -342,22 +346,33 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCLocalSwiftPackageReference section */
+		3EA8136A2C98AF6F00A8CB2C /* XCLocalSwiftPackageReference ".." */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ..;
+		};
+/* End XCLocalSwiftPackageReference section */
+
 /* Begin XCRemoteSwiftPackageReference section */
-		7565EBBF2A9BE0B10005B170 /* XCRemoteSwiftPackageReference "STTextView" */ = {
+		3EA813652C98AEA300A8CB2C /* XCRemoteSwiftPackageReference "STTextView" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/krzyzanowskim/STTextView";
+			repositoryURL = "https://github.com/iXORTech/STTextView.git";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.8.13;
+				branch = "feat/ios-plugin-loading";
+				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		7565EBC02A9BE0B10005B170 /* STTextView */ = {
+		3EA813662C98AEA300A8CB2C /* STTextView */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 7565EBBF2A9BE0B10005B170 /* XCRemoteSwiftPackageReference "STTextView" */;
+			package = 3EA813652C98AEA300A8CB2C /* XCRemoteSwiftPackageReference "STTextView" */;
 			productName = STTextView;
+		};
+		3EA8136B2C98AF6F00A8CB2C /* STTextViewDummyPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = STTextViewDummyPlugin;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

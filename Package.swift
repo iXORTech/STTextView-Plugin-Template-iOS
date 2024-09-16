@@ -7,7 +7,7 @@ let pluginTargetName = "\(pluginName)Plugin"
 
 let package = Package(
     name: "STTextView-Plugin-\(pluginName)",
-    platforms: [.macOS(.v12)],
+    platforms: [.iOS(.v16)],
     products: [
         .library(
             name: "STTextView\(pluginName)Plugin",
@@ -15,7 +15,7 @@ let package = Package(
         )
     ],
     dependencies: [
-      	.package(url: "https://github.com/krzyzanowskim/STTextView", from: "0.8.13")
+        .package(url: "https://github.com/iXORTech/STTextView", branch: "feat/ios-plugin-loading")
     ],
     targets: [
         .target(
